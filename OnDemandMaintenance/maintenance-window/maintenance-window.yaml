@@ -1,7 +1,7 @@
 config:
 - ondemand: ondemand-mw.json
 ondemand:
-- name: "OnDemand - {{.Env.CodeAppli}}"
+- name: "OnDemand - {{.Env.CodeAppliUpper}}"
 - codeappli: "{{.Env.CodeAppli}}"
 - codeappliupper: "{{.Env.CodeAppliUpper}}"
 - start: "{{.Env.Start}}"
