@@ -10,7 +10,7 @@ You will create a maintenance window for a specific period.
 - install monaco
 
       cd;cd test;
-      wget https://github.com/dynatrace-oss/dynatrace-monitoring-as-code/releases/download/v1.5.3/monaco-linux-amd64;
+      wget https://github.com/dynatrace-oss/dynatrace-monitoring-as-code/releases/latest/download/monaco-linux-amd64;
       mv monaco-linux-amd64 monaco;
       chmod +x monaco;
     
@@ -43,6 +43,6 @@ You will create a maintenance window for a specific period.
 - delete
 
       cd;cd test;
-      sed -i 's/CodeAppli/'$CodeAppli'/g' DeleteMaintenance/delete.yaml;./monaco deploy -e=environments.yaml DeleteMaintenance;sed -i 's/'$CodeAppli'/CodeAppli/g' DeleteMaintenance/delete.yaml
+      sed -i 's/CodeAppliUpper/'$CodeAppliUpper'/g' DeleteMaintenance/delete.yaml;./monaco deploy -e=environments.yaml DeleteMaintenance;sed -i 's/'$CodeAppliUpper'/CodeAppliUpper/g' DeleteMaintenance/delete.yaml
 
 
