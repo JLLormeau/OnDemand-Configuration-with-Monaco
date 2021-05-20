@@ -30,7 +30,7 @@ You will create a maintenance window for a specific period.
      
 - deploy or update
 
-      cd;cd test;
+      cd;cd Stime-MW;
       ./monaco deploy -e=environments.yaml OnDemandMaintenance
 
 
