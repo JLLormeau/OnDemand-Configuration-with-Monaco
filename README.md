@@ -43,6 +43,6 @@ You will create a maintenance window for a specific period.
 - delete
 
       cd;cd Stime-MW;
-      sed -i 's/CodeAppliUpper_Start/'$CodeAppliUpper' - "$Start'/g' DeleteMaintenance/delete.yaml;./monaco deploy -e=environments.yaml DeleteMaintenance;sed -i 's/'$CodeAppliUpper'/CodeAppliUpper/g' DeleteMaintenance/delete.yaml
+      sed -i 's/CodeAppliUpper_Start/'$CodeAppliUpper' - '$Start'/g' DeleteMaintenance/delete.yaml;./monaco deploy -e=environments.yaml DeleteMaintenance;sed -i 's/'$CodeAppliUpper'/CodeAppliUpper/g' DeleteMaintenance/delete.yaml
 
 
