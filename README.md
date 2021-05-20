@@ -5,11 +5,11 @@ You will create a maintenance window for a specific period.
 - git clone 
       
       cd;
-      git clone https://github.com/JLLormeau/test
+      git clone https://github.com/JLLormeau/Stime-MW
 
 - install monaco
 
-      cd;cd test;
+      cd;cd Stime-MW;
       wget https://github.com/dynatrace-oss/dynatrace-monitoring-as-code/releases/latest/download/monaco-linux-amd64;
       mv monaco-linux-amd64 monaco;
       chmod +x monaco;
@@ -22,7 +22,7 @@ You will create a maintenance window for a specific period.
       export CodeAppli=<CodeAppli>
       export CodeAppliUpper=`echo $CodeAppli|tr [:lower:] [:upper:]`
       export Start=`date +"%Y-%m-%d %H:%M"`
-      export Stop=`date +"%Y-%m-%d %H:%M" -d "+160 min"`
+      export Stop=`date +"%Y-%m-%d %H:%M" -d "+180 min"`
       
 - test variables
 
@@ -36,13 +36,13 @@ You will create a maintenance window for a specific period.
 
 - stop
 
-      cd;cd test;
+      cd;cd Stime-MW;
       export Stop=`date +"%Y-%m-%d %H:%M"`;./monaco deploy -e=environments.yaml OnDemandMaintenance
 
 
 - delete
 
-      cd;cd test;
+      cd;cd Stime-MW;
       sed -i 's/CodeAppliUpper/'$CodeAppliUpper'/g' DeleteMaintenance/delete.yaml;./monaco deploy -e=environments.yaml DeleteMaintenance;sed -i 's/'$CodeAppliUpper'/CodeAppliUpper/g' DeleteMaintenance/delete.yaml
 
 
