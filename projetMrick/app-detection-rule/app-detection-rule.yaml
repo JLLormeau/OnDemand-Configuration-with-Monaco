@@ -1,0 +1,7 @@
+config:
+- application-1: app-to-be-deployed.json
+
+application-1:
+- name: "TEST_MRICK01"
+- applicationId: "/application-web/application-1.id"
+- pattern: "www.mrick.com"

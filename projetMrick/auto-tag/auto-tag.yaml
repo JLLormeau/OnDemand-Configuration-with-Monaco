@@ -1,0 +1,4 @@
+config:
+- applicationMrick: testMrick.json
+applicationMrick:
+- name: testMrick

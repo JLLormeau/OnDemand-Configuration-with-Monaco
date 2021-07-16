@@ -1,0 +1,5 @@
+config:
+- MZ_standard: MZ_standard.json
+
+MZ_standard:
+- name: MrickStandardMZ

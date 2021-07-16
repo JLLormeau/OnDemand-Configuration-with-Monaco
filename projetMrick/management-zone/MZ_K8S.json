@@ -1,0 +1,56 @@
+{
+ "description": null,
+ "dimensionalRules": [],
+ "entitySelectorBasedRules": [],
+ "metadata": {
+  "clusterVersion": "1.218.104.20210611-114211",
+  "configurationVersions": [
+   0
+  ]
+ },
+ "name": "{{.name}}",
+ "rules": [
+  {
+   "conditions": [
+    {
+     "comparisonInfo": {
+      "caseSensitive": true,
+      "negate": false,
+      "operator": "BEGINS_WITH",
+      "type": "STRING",
+      "value": "MrickTag"
+     },
+     "key": {
+      "attribute": "PROCESS_GROUP_PREDEFINED_METADATA",
+      "dynamicKey": "KUBERNETES_NAMESPACE",
+      "type": "PROCESS_PREDEFINED_METADATA_KEY"
+     }
+    }
+   ],
+   "enabled": true,
+   "propagationTypes": [],
+   "type": "SERVICE"
+  },
+  {
+   "conditions": [
+    {
+     "comparisonInfo": {
+      "caseSensitive": true,
+      "negate": false,
+      "operator": "BEGINS_WITH",
+      "type": "STRING",
+      "value": "MrickTag"
+     },
+     "key": {
+      "attribute": "PROCESS_GROUP_PREDEFINED_METADATA",
+      "dynamicKey": "KUBERNETES_NAMESPACE",
+      "type": "PROCESS_PREDEFINED_METADATA_KEY"
+     }
+    }
+   ],
+   "enabled": true,
+   "propagationTypes": [],
+   "type": "PROCESS_GROUP"
+  }
+ ]
+}
